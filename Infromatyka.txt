@@ -1,0 +1,10 @@
+====== 04-10-17 ======
+Created środa 04 październik 2017
+
+Linux: /    ->     katalog głównt
+Windows: D:\	lub C:\
+
+
+konsola
+Linux: dos
+Windows: cmd
