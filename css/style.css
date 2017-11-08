@@ -1,10 +1,30 @@
-body {
+body{
    font-family: arial, tahoma, verdana, serif;
    font-size: 12pt;
    line-height: 1.5em;
     background-color: lightgreen;
 }
 
+img{ border: 5px solid black;}
+
+.header img {border: 8px solid yellow}
+
+div#header{
+border-color: red;
+}
+
+#header img { border-color: purple; }
+
+#header {
+    padding-top: 50px;
+    border-top: 40px dashed blue;
+    }
+    
+.header {
+    padding: 20px;
+    border: 10px solid darkred;
+    margin: 15px;
+}
 h1 {
     font-size: 250%;
     text-align: center;
