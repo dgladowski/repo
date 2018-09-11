@@ -1,0 +1,24 @@
+wysoki->niski
+j. ludzki-> j.programowania wys poz->j. programowania niskiego poziomu->j.maszynowy
+
+1970 
+jezyk c jezyk pascal
+
+1983 
+jezyk C++
+
+kompliacja 
+linkowanie(konsolidacja)
+
+jezyki interpretowane sa wykonywane przez interpteter
+
+kod 
+
+algorytm
+
+blok:
+-graniczny 
+-operacyjny
+-wejścia/wyjscia
+-decyzyjny
+-graniczny
