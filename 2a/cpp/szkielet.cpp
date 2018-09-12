@@ -17,8 +17,9 @@ int main(int argc, char **argv)
     liczba = 7;
     // std::cout << liczba; // pozwala wypisać co zrobiło, coś takiego jak print
 
+
     int a, b, c; // deklaracja zmiennych
-    a = b = c = d = 0; // inicjalizacja zmiennych
+    a = b = c = d = 10; // inicjalizacja zmiennych
     a = 10; // przypisanie
     b = 2 * a; // mnożenie
     c = b + a; // dodawanie
@@ -32,4 +33,3 @@ int main(int argc, char **argv)
     cout << "\n" << d;
     return 0;
 }
-
