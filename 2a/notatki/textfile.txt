@@ -1,4 +1,4 @@
-21,09
+﻿21,09
 sqlite3 nazwa.db < nazwa2.sql tworzy bazę danych na podstawie podanego pliku
 sqlite3 nazwa.db - otwiera ten plik
 
@@ -36,6 +36,6 @@ W naszym przykładzie wykonajmy analizę bazy zamówień, która jest już w 1NF
 W naszym przypadku widać, że kolumny informacyjne związane z kosztami danego zamówienia oraz stawką podatku VAT, są ze sobą skorelowane. Z jednej z nich można śmiało zrezygnować, nie tracąc żadnej informacji (każda z nich zależy od klucza głównego, ale również od pozostałych dotyczących wartości). Możemy wyznaczyć np. wartość brutto na podstawie stawki VAT i wartości netto itd..
 
 
-
+wszystko tutaj bo nie chce mi sie pisac ani kopiowac
 -------------------- https://www.sqlpedia.pl/projektowanie-i-normalizacja-bazy-danych/ -----------------------------------------
 
