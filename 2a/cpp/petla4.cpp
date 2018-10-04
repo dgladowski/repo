@@ -1,7 +1,7 @@
 /*
- * szkielet.cpp
+ * petla4.cpp
  * 
- * Copyright 2018  <>
+ * Copyright 2018 Hubert <Hubert@DESKTOP-K3DV5KA>
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,32 +22,24 @@
  */
 
 
-#include <iostream> 
+#include <iostream>
 
 using namespace std;
 
-/*io input/output czyli biblioteka wejścia/wyjścia w pythonie nie trzeba
- * niczego takiego importować
- * zawsze musi być main(czyli nazwa funkcji) int=integer
- * std to standard libray
- * "\n" = new line*/
-
 int main(int argc, char **argv)
 {
-	int liczba; // deklaracja zmiennej liczba typu integer typ całkowitego
-    liczba = 7.5;
-    // std::cout << liczba; // pozwala w cpp no coś w takiego jak "wypisz" 
-    cout << liczba;
+	int i, b;
+    i = b = 0;
     
-    int a, b, c, d; // deklaracja zmiennej
-    a = b = c = d = 0; // inicjalizacja zmiennych (TRZEBA TO ZROBIĆ)
+    for (i = 10; i <= 99; i++)
+    {
+        if (i % 6 == true)
+        {
+            cout << i - 1 << endl;
+        }
     
-    a = 9;
-    b = 2 * a;
-    c = 3 * b;
-    d = c + a; // dodawanie
+    }
     
-    cout << "\n" << a << " " << b << " " << c << (c + a) << d;
 	return 0;
 }
 

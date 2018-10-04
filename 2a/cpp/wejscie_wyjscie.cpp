@@ -1,34 +1,51 @@
 /*
- * szkielet.cpp
+ * wejscie_wyjscie.cpp
  *
+ * Copyright 2018  <>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA 02110-1301, USA.
+ *
+ *  endl = koniec lini "cout << endl << a;"
+ * floating point expection błąd jak podaje się 0 do dzielenia
+ * void = nie zwracam wartości
  */
 
 
 #include <iostream>
-/* io input/output czyli biblioteka wejścia/wyjścia w pythonie nie trzeba tego importować
- * zawsze musi być main bo to nazwa funkcji*/
 
 using namespace std;
+
+int suma(int a, int b){
+    return a + b;
+}
 
 int main(int argc, char **argv)
 {
     int a, b;
     a = b = 0;
-    
-    cout << "Podaj liczbę 1: ";
+
+    cout << "podaj liczbę:";
     cin >> a;
-    cout << a;
-
-    cout << endl << "Podaj liczbę 2: ";
+    cout << "podaj drugą liczbę:";
     cin >> b;
-    cout << b;
-    
-    cout << endl << "Suma: " << a + b << endl;
-    cout << "Różnica: " << a - b << endl;
-    cout << "Iloczyn: "<< a * b << endl;
-    cout << "Iloraz: "<< a /b << endl;
+    cout << "\n" << "Suma: " << suma(a, b);
+    cout << "\n" << "Różnica: " << a-b;
+    cout << "\n" << "Iloczyn: " << a*b;
+    cout << "\n" << "Iloraz: " << a/b;
 
-    return 0;
+	return 0;
 }
 
-//DRY dont repeat yourself
