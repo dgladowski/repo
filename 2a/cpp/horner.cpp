@@ -27,6 +27,11 @@ float horner_it(int stopien, float tbwsp[], float x) {
     return wynik;
 }
 
+float horner_re(int st, float tbwsp[], float x) {
+    if (st == 0) return tbwsp[0];
+    return horner_re(st-1, tbwsp, x) * x + tbwsp[st];
+}
+
 int main(int argc, char **argv)
 {
     int stopien = 0;
@@ -49,7 +54,8 @@ int main(int argc, char **argv)
     cout << "\ndla x = " << x << " " << "Wynosi: ";
     cout << horner_it(stopien, tbwsp, x);
     cout << endl;
-   
+    cout << horner_re(stopien, tbwsp, x);
+    
     return 0;
 }
 
