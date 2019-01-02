@@ -39,3 +39,6 @@ W naszym przypadku widać, że kolumny informacyjne związane z kosztami danego 
 wszystko tutaj bo nie chce mi sie pisac ani kopiowac
 -------------------- https://www.sqlpedia.pl/projektowanie-i-normalizacja-bazy-danych/ -----------------------------------------
 
+
+
+
