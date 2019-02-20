@@ -37,7 +37,7 @@ void wypelnij_sort(int tab[], int roz) {
     for(int j = roz - 1; j > 0; j--) {
         for(int i = 0; i < j; i++) {
             licznik++;
-            while (tab[i] > tab[i+1])
+            while (tab[i] < tab[i+1])
                 zamien(tab[i], tab[i+1]);
         }
     }
@@ -47,10 +47,14 @@ void wypelnij_sort(int tab[], int roz) {
 void sort_insert(int tab[], int roz) {
     cout << "\nSortowanie przez wstawianie\n";
     int i, j, tmp;
-    for(i = 1; i < n; i++) { // pętla wybiera kolejne elementy zaczynając od 2
-    tmp =tab[i];
-    j = i - 1
-    while(j >= 0 && tab[j] > tmp)
+    for(i = 1; i < roz; i++) { // pętla wybiera kolejne elementy zaczynając do 2
+    tmp = tab[i];
+    j = i - 1;
+    while (j >= 0 && tab[j] > tmp) {
+        tab[j+1] = tab[j];
+        j--;
+        }
+    tab[j+1] = tmp;
     }
 }
 
@@ -63,8 +67,11 @@ int main(int argc, char **argv)
     cout << endl;
     wypelnij_sort(tab, rozmiar);
     wyswietl(tab, rozmiar);
+    sort_insert(tab, rozmiar);
+    wyswietl(tab, rozmiar);
     //~int a = 10;
     //~int b = 20;
     //~zamien(a, b);
     return 0;
 }
+
